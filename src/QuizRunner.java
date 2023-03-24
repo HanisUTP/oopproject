@@ -18,6 +18,7 @@ public class QuizRunner {
             for (int j = 0; j < answerChoices.size(); j++) {
                 System.out.println((j+1) + ". " + answerChoices.get(j));
             }
+            System.out.print("your answer : ");
             int userAnswer = scanner.nextInt() - 1;
             if (userAnswer == question.getCorrectAnswerIndex()) {
                 System.out.println("Correct!");
@@ -27,16 +28,14 @@ public class QuizRunner {
             }
         }
 
-
-            //System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + " questions correct.");
     }
     public void DispScore() {
-        if (score >= 3) {System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + "  perfect r u gifted or really hard working ");
-        } else if (score >= 2 || score < 3) {
+        if (score >= 24 && score <=25) {System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + "  perfect r u gifted or really hard working ");
+        } else if (score >= 20 && score < 24) {
             System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + " why so clever");
-        } else if (score >= 1 || score < 2) {
+        } else if (score >= 10 && score < 20) {
             System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + " not bad man");
-        } else if (score < 1) {
+        } else if (score < 10) {
             System.out.println("You got " + score + " out of " + quiz.getNumQuestions() + " haha try r u kiding");
         }
     }
