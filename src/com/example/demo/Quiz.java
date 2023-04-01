@@ -9,7 +9,7 @@ import javax.swing.border.SoftBevelBorder;
 public class Quiz {
     public static void main(String[] args) throws InterruptedException {
 
-        JFrame window = new JFrame ("Quiz Game") ;
+        JFrame window = new JFrame ("Laboratory Management Quiz") ;
         window.setSize(800,500);
         window.setLocationRelativeTo(null);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,10 +24,18 @@ public class Quiz {
             welcome.choose(time);
 
             quiz2 [] qObj = {
-                    new quiz2("As laboratory users,which is NOT the responsibility of Students ","op1","op2","op3","op4","op1"),
-                    new quiz2("Question 2","op1","op2","op3","op4","op4"),
-                    new quiz2("Question 3","op1","op2","op3","op4","op3"),
-                    new quiz2("Question 4","op1","op2","op3","op4","op2")
+                    new quiz2("1. We are not able to eliminate all risk but it must be: ","Converted","Reduce","Control","Preserve","Control"),
+                    new quiz2("2. UTP HSE Policy statement consists of: ","6 elements","8 elements","5 elements","7 elements","6 elements"),
+                    new quiz2("3. First aid will be administered by:","Trained First Aider","Graduate Assistant","Laboratory Manager","Lecturer","Trained First Aider"),
+                    new quiz2("4. Defective equipment or broken glassware must be reported to:","Laboratory Manager","Graduate Assistant","Research Scientist","Laboratory Personnel","Laboratory Personnel"),
+                    new quiz2("5. Occupational Safety and Health Act (OSHA) was enacted on : ","24th February 1994","22nd February 1994","25th February 1994","23rd February 1994","25th February 1994"),
+                    new quiz2("6. We are not able to eliminate all risk but it must be: ","Personal Protective Equipment","Personal Protective Essentials","Personal Protective Expert","Personal Protective Examples","Personal Protective Equipment"),
+                    new quiz2("7. What is the common way to determine what is practicable? ","Cost Performance Analysis","Safety","Variable Cost","Cost–benefit Evaluations","Cost–benefit Evaluations"),
+                    new quiz2("8. In which section stated the First Aid Measures? ","Section A","Section E","Section F","Section B","Section F"),
+                    new quiz2("9. The exclamation mark symbol means that the contents inside are: ","Very hot","Harmful/Irritants","Unstable/Volatile","Radioactive","Harmful/Irritants"),
+                    new quiz2("10. How much information that contains in SDS in minimum? ","8","12","14","16","16"),
+
+
             };
 
             while (nbr != qObj.length && s<time ) {

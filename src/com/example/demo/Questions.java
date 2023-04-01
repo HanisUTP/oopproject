@@ -92,7 +92,7 @@ class Questions extends JPanel {
                 count.S++ ;
                 count.Ms=0 ;
             }
-            if (count.S==60){ // set time limit to answer
+            if (count.S==60){ // base on time limit to answer
                 count.M++ ;
                 count.S=0;
             }
