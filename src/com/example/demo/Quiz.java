@@ -18,7 +18,7 @@ public class Quiz {
         while (true) {
 
             int nbr =0 , score=0 , m=0 , s=0 ;
-            int time = 60 ; //sec
+            int time = 60 ; //sec to set time limit
 
             WelcomePage welcome = new WelcomePage (window);
             welcome.choose(time);
